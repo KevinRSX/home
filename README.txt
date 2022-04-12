@@ -12,7 +12,7 @@ Local:
 brew install ack
 brew install the_silver_searcher
 
-Remote Ubuntu, otherwise follow instructions
+Ubuntu remote, otherwise follow official instructions:
 (>19.10)
 sudo apt-get install ack
 (<=19.10)
