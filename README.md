@@ -31,5 +31,5 @@ tmux
 I'm new to tmux as well, so probably
  - get familiar with [tmux cheatsheet](https://tmuxcheatsheet.com/)
  - have a better .tmux.conf
- - have `tmux a` or something in your .ssh/config
+ - add `tmux a` or something to your .ssh/config
  - ...
