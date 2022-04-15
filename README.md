@@ -22,8 +22,8 @@ Other plug-ins
 ## What Next?
 ctags: http://ctags.sourceforge.net/
 ```
-cd /path/to/c/project/
-ctag -R
+$ cd /path/to/c/project/
+$ ctag -R
 ```
 
 tmux
