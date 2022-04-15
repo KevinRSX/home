@@ -27,6 +27,7 @@ ctag -R
 ```
 
 tmux
+
 I'm new to tmux as well, so probably
  - get familiar with [tmux cheatsheet](https://tmuxcheatsheet.com/)
  - have a better .tmux.conf
