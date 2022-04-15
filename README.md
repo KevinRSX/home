@@ -23,7 +23,7 @@ Other plug-ins
 ctags: http://ctags.sourceforge.net/
 ```
 $ cd /path/to/c/project/
-$ ctag -R
+$ ctags -R
 ```
 
 tmux
