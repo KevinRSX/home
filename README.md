@@ -1,7 +1,7 @@
 # vim-config
 ## Installation
 
-This copies `*.rc` to `~`. You should make sure you are installing for the correct user.
+This copies `.*rc` to `~`. You should make sure you are installing for the correct user.
 ```
 $ chmod a+x install.sh
 $ ./install.sh
