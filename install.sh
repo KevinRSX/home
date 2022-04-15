@@ -5,18 +5,18 @@ ag=""
 next=":PlugInstall in vim and you are good to go!"
 
 case $OS in
-   "Linux")
-      installer="sudo apt"
-      ag="silversearcher-ag"
-      ;;
-   "Darwin")
-      installer="brew"
-      ag="the_silver_searcher"
-      ;;
-   *)
-      echo "Linux and Darwin only"
-      exit 1
-      ;;
+	"Linux")
+		installer="sudo apt"
+		ag="silversearcher-ag"
+		;;
+	"Darwin")
+		installer="brew"
+		ag="the_silver_searcher"
+		;;
+	*)
+		echo "Linux and Darwin only"
+		exit 1
+		;;
 esac
 
 if test -f "~/.vimrc"; then
