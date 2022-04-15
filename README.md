@@ -18,3 +18,17 @@ vim-plug
 
 Other plug-ins
  - See .vimrc for their GitHub repo name. I have also starred most if not all of them.
+
+## What Next?
+ctags: http://ctags.sourceforge.net/
+```
+cd /path/to/c/project/
+ctag -R
+```
+
+tmux
+I'm new to tmux as well, so probably
+ - get familiar with [tmux cheatsheet](https://tmuxcheatsheet.com/)
+ - have a better .tmux.conf
+ - have `tmux a` or something in your .ssh/config
+ - ...
