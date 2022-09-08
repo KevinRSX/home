@@ -149,6 +149,9 @@ autocmd FileType python setlocal shiftwidth=4 softtabstop=4 expandtab
 autocmd FileType haskell setlocal shiftwidth=4 softtabstop=4 expandtab
 autocmd FileType ml setlocal shiftwidth=4 softtabstop=4 expandtab
 autocmd FileType ocaml setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType sh setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType tex setlocal shiftwidth=4 softtabstop=4 expandtab
+autocmd FileType bib setlocal shiftwidth=4 softtabstop=4 expandtab
 autocmd FileType cpp setlocal shiftwidth=8
 
 
@@ -199,6 +202,18 @@ Plug 'mileszs/ack.vim'
 
 " C color scheme
 Plug 'morhetz/gruvbox'
+
+
+" neovim language server
+Plug 'neovim/nvim-lspconfig'
+
+" neovim autocomplete
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'saadparwaiz1/cmp_luasnip'
+Plug 'L3MON4D3/LuaSnip'
+
+
 call plug#end()
 
 
