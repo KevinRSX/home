@@ -143,13 +143,17 @@ set pastetoggle=<F11>
 
 " Indentation settings for using hard tabs for indent. Display tabs as
 " four characters wide.
-"set shiftwidth=4
-"set tabstop=4
+" set shiftwidth=4
+" set tabstop=4
 autocmd FileType python setlocal shiftwidth=4 softtabstop=4 expandtab
 autocmd FileType haskell setlocal shiftwidth=4 softtabstop=4 expandtab
 autocmd FileType ml setlocal shiftwidth=4 softtabstop=4 expandtab
 autocmd FileType ocaml setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType sh setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType tex setlocal shiftwidth=4 softtabstop=4 expandtab
+autocmd FileType bib setlocal shiftwidth=4 softtabstop=4 expandtab
 autocmd FileType cpp setlocal shiftwidth=8
+autocmd FileType go setlocal shiftwidth=4 tabstop=4
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -197,8 +201,9 @@ Plug 'tpope/vim-commentary'
 " Advanced grepping
 Plug 'mileszs/ack.vim'
 
-" C color scheme
-Plug 'morhetz/gruvbox'
+" Color scheme
+Plug 'sainnhe/everforest'
+
 call plug#end()
 
 
@@ -279,8 +284,35 @@ nmap <leader>n :NERDTreeFind<CR>  " open current buffer in file tree
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Dark gruvbox
+" Color Scheme: everforest
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-autocmd vimenter * ++nested colorscheme gruvbox
-set background=dark    " Setting dark mode
+" Important!!
+if has('termguicolors')
+  set termguicolors
+endif
+
+" For dark version.
+set background=dark
+
+" For light version.
+" set background=light
+
+" Disable italic comment
+let g:everforest_disable_italic_comment = 1
+
+" Set contrast.
+" This configuration option should be placed before `colorscheme everforest`.
+" Available values: 'hard', 'medium'(default), 'soft'
+let g:everforest_background = 'medium'
+
+" For better performance
+let g:everforest_better_performance = 1
+
+colorscheme everforest
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Lightline
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:lightline = {'colorscheme' : 'everforest'}
 
