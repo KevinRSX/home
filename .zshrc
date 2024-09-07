@@ -1,7 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
-PATH="/Users/kevin-m1/go/bin:$PATH"
+PATH="$HOME/go/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -107,26 +106,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ght="cat ~/.gh-https-token"
-
-# opam configuration
-[[ ! -r /Users/kevin-m1/.opam/opam-init/init.zsh ]] || source /Users/kevin-m1/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
-export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/kevin-m1/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/kevin-m1/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/kevin-m1/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/kevin-m1/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
 
 ################################################################################
 # Zsh syntax highlight setup
