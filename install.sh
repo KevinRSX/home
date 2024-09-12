@@ -57,22 +57,22 @@ echo ">>>>>>>>Installing Oh My Zsh<<<<<<<<"
 install_omz
 cp .zshrc $HOME/.zshrc
 cp .oh-my-zsh/kevin.zsh-theme $HOME/.oh-my-zsh/themes/
-# install_omz_plugin
+install_omz_plugin
 
 
 echo ">>>>>>>>Installing TMUX<<<<<<<<"
 # install_tmux
-# install_tpm
+install_tpm
 cp .tmux.conf $HOME/.tmux.conf
 
 
 echo ">>>>>>>>Installing vim<<<<<<<<"
-install_nvim
+install_vim
 cp .vimrc $HOME/.vimrc
 echo "Press :PlugInstall in vim to activate the plug-ins"
 
 echo ">>>>>>>>Installing nvim<<<<<<<<"
 mkdir -p $HOME/.config
-cp -r nvim-config $HOME/.config
+cp -r nvim-config $HOME/.config && mv $HOME/.config/nvim-config $HOME/.config/nvim
 install_nvim
 
