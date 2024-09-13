@@ -73,6 +73,6 @@ echo "Press :PlugInstall in vim to activate the plug-ins"
 
 echo ">>>>>>>>Installing nvim<<<<<<<<"
 mkdir -p $HOME/.config
-cp -r nvim-config $HOME/.config && mv $HOME/.config/nvim-config $HOME/.config/nvim
+cp -r nvim $HOME/.config
 install_nvim
 

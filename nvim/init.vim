@@ -159,6 +159,7 @@ autocmd FileType haskell setlocal shiftwidth=4 softtabstop=4 expandtab
 autocmd FileType ml setlocal shiftwidth=4 softtabstop=4 expandtab
 autocmd FileType ocaml setlocal shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType sh setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType lua setlocal shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType tex setlocal shiftwidth=4 softtabstop=4 expandtab
 autocmd FileType bib setlocal shiftwidth=4 softtabstop=4 expandtab
 autocmd FileType cpp setlocal shiftwidth=8
@@ -208,7 +209,8 @@ Plug 'mileszs/ack.vim'
 " Color scheme
 Plug 'sainnhe/everforest'
 
-" Neovim-specific plug-in's
+""
+"Neovim-specific plug-in's
 
 " Syntax parser
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -216,6 +218,14 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " Neovim telescope - file searching
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' }
+
+" LSP
+Plug 'neovim/nvim-lspconfig'
+
+" main one
+Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
+" 9000+ Snippets
+Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
 
 call plug#end()
 
