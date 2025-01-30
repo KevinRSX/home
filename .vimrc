@@ -204,6 +204,10 @@ Plug 'mileszs/ack.vim'
 " Color scheme
 Plug 'sainnhe/everforest'
 
+" fzf
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+
+
 call plug#end()
 
 
@@ -292,7 +296,7 @@ if has('termguicolors')
 endif
 
 " For dark version.
-set background=dark
+set background=light
 
 " For light version.
 " set background=light
